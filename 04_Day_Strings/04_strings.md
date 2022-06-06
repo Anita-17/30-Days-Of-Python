@@ -199,7 +199,7 @@ Another new string formatting is string interpolation, f-strings. Strings start 
 ```py
 a = 4
 b = 3
-print(f'{a} + {b} = {a +b}')
+print(f'{a} + {b} = {a + b}')
 print(f'{a} - {b} = {a - b}')
 print(f'{a} * {b} = {a * b}')
 print(f'{a} / {b} = {a / b:.2f}')
@@ -328,16 +328,16 @@ print(challenge.expandtabs(10)) # 'thirty    days      of        python'
 
 ```py
 challenge = 'thirty days of python'
-print(challenge.find('y'))  # 16
-print(challenge.find('th')) # 17
+print(challenge.find('y'))  # 5
+print(challenge.find('th')) # 0
 ```
 
 - rfind(): Returns the index of the last occurrence of a substring, if not found returns -1
 
 ```py
 challenge = 'thirty days of python'
-print(challenge.rfind('y'))  # 5
-print(challenge.rfind('th')) # 1
+print(challenge.rfind('y'))  # 16
+print(challenge.rfind('th')) # 17
 ```
 
 - format(): formats string into a nicer output  
@@ -373,7 +373,7 @@ print(challenge.index(sub_string, 9)) # error
 ```py
 challenge = 'thirty days of python'
 sub_string = 'da'
-print(challenge.rindex(sub_string))  # 8
+print(challenge.rindex(sub_string))  # 7
 print(challenge.rindex(sub_string, 9)) # error
 ```
 
